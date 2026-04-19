@@ -166,7 +166,12 @@ section { position: relative; padding: 96px 0; }
 .nav-right { display: flex; align-items: center; gap: 12px; }
 @media (max-width: 860px) { .nav-links { display: none; } }
 /* hide desktop CTA in nav on small screens — mobile menu has its own */
-@media (max-width: 640px) { .nav-cta { display: none; } }
+@media (max-width: 640px) {
+  .nav-cta { display: none !important; }
+  .nav { height: 60px; }
+  .brand { font-size: 15px; gap: 8px; }
+  .brand-mark { width: 28px; height: 28px; font-size: 12px; }
+}
 
 /* ---- Hamburger ---- */
 .nav-hamburger {
