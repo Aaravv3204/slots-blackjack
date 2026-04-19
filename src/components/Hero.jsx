@@ -37,10 +37,10 @@ const FAN_MOBILE = [
 ]
 
 /* each card drives its own x/y/rotate directly from scroll */
-function AnimatedCard({ card, idx, fanProgress }) {
-  const x      = useTransform(fanProgress, [0, 1], [PILE[idx].x, FAN[idx].x])
-  const y      = useTransform(fanProgress, [0, 1], [PILE[idx].y, FAN[idx].y])
-  const rotate = useTransform(fanProgress, [0, 1], [PILE[idx].r, FAN[idx].r])
+function AnimatedCard({ card, idx, fanProgress, fan }) {
+  const x      = useTransform(fanProgress, [0, 1], [PILE[idx].x, fan[idx].x])
+  const y      = useTransform(fanProgress, [0, 1], [PILE[idx].y, fan[idx].y])
+  const rotate = useTransform(fanProgress, [0, 1], [PILE[idx].r, fan[idx].r])
 
   return (
     <motion.div
@@ -129,6 +129,7 @@ export default function Hero() {
                     card={card}
                     idx={i}
                     fanProgress={fanProgress}
+                    fan={FAN}
                   />
                 ))}
               </div>
