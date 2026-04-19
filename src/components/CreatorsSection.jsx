@@ -56,20 +56,9 @@ export default function CreatorsSection() {
                 <h3>{c.name}</h3>
                 <div className="creator-handle">{c.handle}</div>
                 <p>{c.description}</p>
-                <div className="creator-stats">
-                  {c.stats.map(s => (
-                    <div key={s.l} className="s-item">
-                      <span className="v">{s.v}</span>
-                      <span className="l">{s.l}</span>
-                    </div>
-                  ))}
-                </div>
                 <div className="creator-actions">
                   <a href={c.href} target="_blank" rel="noopener noreferrer" className="btn btn-kick btn-sm">
                     <IconKick size={14}/> Watch on Kick
-                  </a>
-                  <a href={ROOBET_URL} target="_blank" rel="noopener noreferrer sponsored" className="btn btn-secondary btn-sm">
-                    Claim code
                   </a>
                 </div>
               </div>

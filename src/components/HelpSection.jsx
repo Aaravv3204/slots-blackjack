@@ -10,10 +10,10 @@ export default function HelpSection() {
           <div>
             <span className="eyebrow">NEED A HAND?</span>
             <h2 style={{ marginTop: 10 }}>Stuck on signup? We'll walk you through it.</h2>
-            <p>Join our Discord — a real human will answer in under three minutes. No bots, no canned replies, no upsells.</p>
+            <p>Join our Discord and our team will get back to you as soon as possible. We're here to help with signups, bonuses, and anything else you need.</p>
           </div>
           <div className="help-actions">
-            <a href="https://discord.gg/YOURSERVER" target="_blank" rel="noopener noreferrer" className="btn btn-discord btn-lg">
+            <a href="https://discord.com/invite/oeg" target="_blank" rel="noopener noreferrer" className="btn btn-discord btn-lg">
               <IconDiscord/> Join Discord
             </a>
             <a href={ROOBET_URL} target="_blank" rel="noopener noreferrer sponsored" className="btn btn-ghost btn-lg">
