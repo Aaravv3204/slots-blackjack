@@ -166,7 +166,7 @@ section { position: relative; padding: 96px 0; }
 .nav-right { display: flex; align-items: center; gap: 12px; }
 @media (max-width: 860px) { .nav-links { display: none; } }
 /* hide desktop CTA in nav on small screens — mobile menu has its own */
-@media (max-width: 480px) { .nav-cta { display: none; } }
+@media (max-width: 640px) { .nav-cta { display: none; } }
 
 /* ---- Hamburger ---- */
 .nav-hamburger {
