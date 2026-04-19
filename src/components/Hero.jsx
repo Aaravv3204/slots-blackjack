@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { IconCrown, IconDice } from './Icons'
 
@@ -12,7 +12,6 @@ const CARDS = [
   { rank: '10', suit: '♠', red: false },
 ]
 
-/* all cards start in a tight scrambled pile */
 const PILE = [
   { x:  12, y:  16, r:  26 },
   { x: -14, y:  -8, r: -22 },
@@ -21,13 +20,20 @@ const PILE = [
   { x:   4, y:   4, r:  12 },
 ]
 
-/* final fanned hand — spread fits neatly inside the column */
-const FAN = [
+const FAN_DESKTOP = [
   { x: -175, y: 52, r: -30 },
   { x:  -88, y: 20, r: -15 },
   { x:    0, y:  0, r:   0 },
   { x:   88, y: 20, r:  15 },
   { x:  175, y: 52, r:  30 },
+]
+
+const FAN_MOBILE = [
+  { x: -88, y: 34, r: -26 },
+  { x: -44, y: 14, r: -13 },
+  { x:   0, y:  0, r:   0 },
+  { x:  44, y: 14, r:  13 },
+  { x:  88, y: 34, r:  26 },
 ]
 
 /* each card drives its own x/y/rotate directly from scroll */
@@ -56,6 +62,14 @@ function AnimatedCard({ card, idx, fanProgress }) {
 
 export default function Hero() {
   const sectionRef = useRef(null)
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 640)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+  const FAN = isMobile ? FAN_MOBILE : FAN_DESKTOP
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
