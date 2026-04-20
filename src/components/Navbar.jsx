@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="nav">
           <a href="#home" className="brand" onClick={close}>
             <span className="brand-mark">B</span>
-            blackjack<em>&amp;</em>slots
+            slots <em>and</em> blackjack
           </a>
 
           <ul className="nav-links">

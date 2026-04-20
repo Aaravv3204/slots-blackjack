@@ -89,7 +89,7 @@ export default function Hero() {
           <div className="hero-copy">
             <div className="hero-pill">
               <span className="pill-tag">Live</span>
-              <span>blackjackandslots.com · Updated daily</span>
+              <span>slotsandblackjack.com · Updated daily</span>
             </div>
             <h1>
               Master <span className="neon" data-text="Blackjack.">Blackjack.</span><br/>
