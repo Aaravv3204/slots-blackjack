@@ -8,9 +8,9 @@ export default function Footer() {
           <div className="footer-brand">
             <a href="#" className="brand">
               <span className="brand-mark">B</span>
-              blackjack<em>&amp;</em>slots
+              slots <em>and</em> blackjack
             </a>
-            <p>blackjackandslots.com — free tools and honest picks for blackjack players and slot hunters. Independent affiliate; not a gambling operator.</p>
+            <p>slotsandblackjack.com — free tools and honest picks for blackjack players and slot hunters. Independent affiliate; not a gambling operator.</p>
           </div>
           <div className="footer-col">
             <h5>Tools</h5>
@@ -42,14 +42,14 @@ export default function Footer() {
         </div>
         <div className="disclaimer">
           <strong>Play responsibly. 18+ (21+ in some regions).</strong> Gambling can be addictive.
-          blackjackandslots.com is an independent affiliate — we are not a casino operator. Outbound links to Roobet
+          slotsandblackjack.com is an independent affiliate — we are not a casino operator. Outbound links to Roobet
           are sponsored; we earn a commission when players sign up through our links. All bonuses are subject to Roobet's
           terms. If you or someone you know needs help, visit{' '}
           <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--neon-200)' }}>begambleaware.org</a>{' '}
           or call 1-800-GAMBLER.
         </div>
         <div className="footer-base">
-          <span>© 2026 BLACKJACKANDSLOTS.COM · ALL RIGHTS RESERVED</span>
+          <span>© 2026 SLOTSANDBLACKJACK.COM · ALL RIGHTS RESERVED</span>
           <span>BUILT FOR PLAYERS, BY PLAYERS</span>
         </div>
       </div>

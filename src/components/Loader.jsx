@@ -113,7 +113,7 @@ export default function Loader({ onDone }) {
         </div>
         <div className="loader-brand">
           <span className="brand-mark">B</span>
-          <span>blackjack<em>&amp;</em>slots</span>
+          <span>slots <em>and</em> blackjack</span>
         </div>
         <div className="loader-bar-wrap">
           <div className="loader-bar">
