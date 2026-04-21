@@ -81,7 +81,10 @@ export default function CheatSheet() {
             <table className="cheat-table">
               <thead>
                 <tr>
-                  <th className="corner">YOUR HAND<br/><span>vs DEALER ↓</span></th>
+                  <th className="corner">
+                    <span className="corner-your">YOUR HAND</span>
+                    <span className="corner-dealer">DEALER'S CARD ↓</span>
+                  </th>
                   {DEALER_UPS.map(u => <th key={u}>{u}</th>)}
                 </tr>
               </thead>
