@@ -71,20 +71,22 @@ export default function CheatSheet() {
 
         <div className="cheat-shell">
           <div className="cheat-toolbar">
-            <span className="cheat-toolbar-label">DEALER'S CARD →</span>
             <a href={ROOBET_URL} target="_blank" rel="noopener noreferrer sponsored" className="btn btn-primary btn-sm">
               <IconPlay size={12}/> Play on Roobet
             </a>
           </div>
 
-          <div className="cheat-table-wrap">
+          <div className="cheat-axes">
+            <div className="cheat-axis-y-wrap">
+              <span className="cheat-axis-y">YOUR HAND ↓</span>
+            </div>
+            <div className="cheat-axis-right">
+              <div className="cheat-axis-x">DEALER'S CARD →</div>
+              <div className="cheat-table-wrap">
             <table className="cheat-table">
               <thead>
                 <tr>
-                  <th className="corner">
-                    <span className="corner-your">YOUR HAND</span>
-                    <span className="corner-dealer">DEALER'S CARD ↓</span>
-                  </th>
+                  <th className="corner"></th>
                   {DEALER_UPS.map(u => <th key={u}>{u}</th>)}
                 </tr>
               </thead>
@@ -113,6 +115,8 @@ export default function CheatSheet() {
                 ))}
               </tbody>
             </table>
+              </div>
+            </div>
           </div>
 
           <div className="cheat-legend">
