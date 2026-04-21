@@ -81,7 +81,7 @@ export default function PopularSlots() {
         <div className="slots-cta">
           <div>
             <h3>Ready to spin?</h3>
-            <p>Sign up on Roobet through our link — you'll get a deposit match and we'll credit you on our leaderboard.</p>
+            <p>Sign up on Roobet through our link — you'll get a deposit bonus and a $20,000 Wager Leaderboard.</p>
           </div>
           <a href={ROOBET_URL} target="_blank" rel="noopener noreferrer sponsored" className="btn btn-primary btn-lg">
             <IconDice size={16}/> Play on Roobet
